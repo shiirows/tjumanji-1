@@ -58,16 +58,16 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 .login-wrap {
-  width: 100%;
+  width: 80%;
   margin: auto;
   max-width: 525px;
   min-height: 670px;
   position: relative;
-
   background: #0275d8;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.9;
+  box-shadow: 0 0 4px white;
 }
 .login-html {
   width: 100%;
