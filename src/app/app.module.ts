@@ -25,7 +25,8 @@ const ROUTES: Routes = [
     ContactComponent,
     HomeComponent,
     FooterComponent,
-    Page404Component
+    Page404Component,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
