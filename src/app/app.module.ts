@@ -11,6 +11,7 @@ import { Page404Component } from './page404/page404.component';
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactComponent},
   { path: '**', component: Page404Component }
 ];
 
