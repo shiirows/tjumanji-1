@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SocialMedia} from '../common/social.model';
-import {ResSociauxService} from '../res-sociaux.service';
+import {ResSociauxService} from '../common/services/res-sociaux.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
