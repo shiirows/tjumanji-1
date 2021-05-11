@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div>
+    <!-- HEADER -->
+    <img style="width: 100%;height: 500%;" src="../../assets/home/header.jpg" class="img-fluid" alt="header home">
+    <!-- NEWS -->
+    <div class="news d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;" *ngFor="let singleNews of news">
+                <img [src]="singleNews.image" class="card-img-top" [alt]="singleNews.title">
+                <div class="card-body">
+                  <h5 class="card-title">{{singleNews.title}}</h5>
+                  <p class="card-text">
+                      {{singleNews.desc}}
+                  </p>
+                  <a href="#" class="btn btn-primary">Change</a>
+                </div>
+            </div>
+    </div>
+</div>
