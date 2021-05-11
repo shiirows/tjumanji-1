@@ -8,21 +8,23 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
+import { ListComponent } from './list/list.component';
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
+  {path: 'liste', component: ListComponent},
   { path: '**', component: Page404Component }
 ];
 
 @NgModule({
-
   declarations: [
     AppComponent,
     ContactComponent,
     HomeComponent,
     FooterComponent,
-    Page404Component
+    Page404Component,
+    ListComponent
   ],
   imports: [
     BrowserModule,
