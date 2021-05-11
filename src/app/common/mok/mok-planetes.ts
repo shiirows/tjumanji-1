@@ -1,4 +1,4 @@
-import { Planete } from "../model/modele-planete";
+import { Planete } from "../models/modele-planete";
 
 export const defaultPlanetes: Planete[]=[
     new Planete(
