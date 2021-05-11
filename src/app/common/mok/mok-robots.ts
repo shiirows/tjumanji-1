@@ -1,4 +1,5 @@
-import { Robot } from "../model/robot.model";
+
+import { Robot } from "../models/robot.model";
 import { defaultPlanetes } from "./mok-planetes";
 
 export const robots: Robot[] = [

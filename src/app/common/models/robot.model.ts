@@ -1,7 +1,7 @@
 import { Planete } from './modele-planete';
 
 export class Robot {
-    public id: number;
+  public id: number;
   public pseudo: string;
   public image: string;
   public sexe: string;
