@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Planete } from '../common/model/modele-planete';
+import { Planete } from '../common/models/modele-planete';
 import { News } from '../common/models/news.model';
 import { defaultPlanetes } from '../common/mok/mok-planetes'
 @Component({
