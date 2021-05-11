@@ -9,11 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
 import { ListComponent } from './list/list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
   {path: 'liste', component: ListComponent},
+  { path: 'navbar', component: NavbarComponent},
   { path: '**', component: Page404Component }
 ];
 
@@ -24,7 +27,8 @@ const ROUTES: Routes = [
     HomeComponent,
     FooterComponent,
     Page404Component,
-    ListComponent
+    ListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

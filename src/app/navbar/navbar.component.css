@@ -1,0 +1,63 @@
+#link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/assets/img/stars.jpg");
+   
+}
+
+#titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: blanchedalmond;
+    
+    margin-top: 2%;
+}
+
+#system{
+    display: flex;
+    justify-content: center;
+}
+
+#planet{
+
+ width: 100%;
+ height: 180px;
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-around;
+margin-top: 50px;
+
+}
+
+.planets {
+    cursor: pointer;
+    
+}
+
+.planets:hover {
+    transform:scale(1.25);
+    animation-delay: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+#planet1{
+    margin-top: -20px;
+    
+    
+}
+
+
+#soleil{
+    position: absolute;
+    left: -300px;
+    top: -320px;
+}
