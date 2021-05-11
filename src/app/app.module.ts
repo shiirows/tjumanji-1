@@ -10,6 +10,7 @@ import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
 import { ListComponent } from './list/list.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 const ROUTES: Routes = [
@@ -17,6 +18,7 @@ const ROUTES: Routes = [
   { path: 'contact', component: ContactComponent},
   {path: 'liste', component: ListComponent},
   { path: 'navbar', component: NavbarComponent},
+  {path: 'message', component: MessagesComponent},
   { path: '**', component: Page404Component }
 ];
 
@@ -28,7 +30,8 @@ const ROUTES: Routes = [
     FooterComponent,
     Page404Component,
     ListComponent,
-    NavbarComponent
+    NavbarComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
