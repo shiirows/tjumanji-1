@@ -1,0 +1,14 @@
+p {
+  color: white;
+  margin: 0;
+}
+span {
+  font-size: 2em;
+}
+.contact p {
+  font-size: 1em;
+}
+#router {
+  text-decoration: none;
+  color: rgb(243, 193, 28);
+}
