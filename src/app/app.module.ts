@@ -1,24 +1,37 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
 
 const ROUTES: Routes = [
-  { path: 'home', component: AppComponent },
-  { path: '' , component: Page404Component}
+  { path: 'accueil', component: AppComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent},
+  { path: '**', component: Page404Component }
 ];
 
 @NgModule({
 
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent,
+    HomeComponent,
+    FooterComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
