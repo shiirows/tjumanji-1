@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -9,13 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EspaceMajeurComponent } from './espace-majeur/espace-majeur.component';
 
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
   { path: 'navbar', component: NavbarComponent},
-  { path: '**', component: Page404Component }
+  { path: 'majeur', component: EspaceMajeurComponent},
+  { path: '**', component: Page404Component },
 ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const ROUTES: Routes = [
     HomeComponent,
     FooterComponent,
     Page404Component,
-    NavbarComponent
+    NavbarComponent,
+    EspaceMajeurComponent
   ],
   imports: [
     BrowserModule,
