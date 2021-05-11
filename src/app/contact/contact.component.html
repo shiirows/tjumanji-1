@@ -1,0 +1,103 @@
+<div id="font">
+    <form class="login-wrap" (ngSubmit)="(formulaire.valid)" [formGroup]="formulaire">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Contact
+                Us</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <!-- LAST NAME INPUT -->
+                    <div class="group">
+                        <label for="lastnameInput" class="label">Last name</label>
+                        <input id="lastnameInput" type="text" class="input" formControlName="name" [ngClass]="{
+                  'is-invalid':
+                    formulaire.get('name').touched &&
+                    !formulaire.get('name').valid
+                }" />
+                        <!-- LAST NAME ERRORS -->
+                        <div class="invalid-feeback" *ngIf="
+                  formulaire.get('name').touched && formulaire.get('name').dirty
+                ">
+                            <span class="text-danger" *ngIf="formulaire.get('name').errors?.minlength">
+                                Please enter a name of at least 3 characters</span>
+                            <span class="text-danger" *ngIf="formulaire.get('name').errors?.maxlength">
+                                Please enter a name of up to 120 characters></span>
+                            <span class="text-danger" *ngIf="formulaire.get('name').errors?.required">
+                                Please enter a name
+                            </span>
+                        </div>
+                    </div>
+                    <!-- FIRST NAME INPUT -->
+                    <div class="group">
+                        <label for="firstNameInput" class="label">First name</label>
+                        <input id="firstNameInput" type="text" class="input" formControlName="prenom" [ngClass]="{
+                  'is-invalid':
+                    formulaire.get('prenom').touched &&
+                    !formulaire.get('prenom').valid
+                }" />
+                        <!-- FIRST NAME ERRORS -->
+                        <div class="invalid-feeback" *ngIf="
+                  formulaire.get('prenom').touched &&
+                  formulaire.get('prenom').dirty
+                ">
+                            <span class="text-danger" *ngIf="formulaire.get('prenom').errors?.required">Please enter a
+                                firstname</span>
+                            <span class="text-danger" *ngIf="formulaire.get('prenom').errors?.minlength">The minimum
+                                length of your first name must be greater than
+                                3</span>
+                            <span class="text-danger" *ngIf="formulaire.get('prenom').errors?.maxlength">The maximum
+                                length of your first name must be lower at
+                                120</span>
+                        </div>
+                    </div>
+                    <!-- EMAIL INPUT -->
+                    <div class="group">
+                        <label for="emailInput" class="label">Email</label>
+                        <input id="emailInput" type="text" class="input" formControlName="email" [ngClass]="{
+                  'is-invalid':
+                    formulaire.get('email').touched &&
+                    !formulaire.get('email').valid
+                }" />
+                        <!-- EMAIL ERRORS -->
+                        <div class="invalid-feeback" *ngIf="
+                  formulaire.get('email').touched && formulaire.get('email').dirty
+                ">
+                            <span class="text-danger" *ngIf="formulaire.get('email').errors?.required">
+                                Email address is required</span>
+                            <span class="text-danger" *ngIf="formulaire.get('email').errors?.minlength">The minimum
+                                length must be greater than 13</span>
+                            <span class="text-danger" *ngIf="formulaire.get('email').errors?.maxlength">The maximum
+                                length must be less than 120</span>
+                            <span class="text-danger" *ngIf="formulaire.get('email').errors?.email">
+                                You are not using the right design of an email</span>
+                        </div>
+                    </div>
+                    <!-- MESSAGE INPUT -->
+                    <div class="group">
+                        <label for="messageInput" class="label">Message</label>
+                        <textarea id="messageInput" type="text" class="scrollable" rows="8" formControlName="message"
+                            (change)="onMessageChange()" [ngClass]="{
+                  'is-invalid':
+                    formulaire.get('message').touched &&
+                    !formulaire.get('message').valid
+                }"></textarea>
+                        <!-- MESSAGE ERRORS -->
+                        <div class="invalid-feeback" *ngIf="
+                  formulaire.get('message').touched &&
+                  formulaire.get('message').dirty
+                ">
+                            <span class="text-danger" *ngIf="formulaire.get('message').errors?.required">A message is
+                                required</span>
+                            <span class="text-danger" *ngIf="formulaire.get('message').errors?.minlength">The minimum
+                                message length must be greater than 5</span>
+                            <span class="text-danger" *ngIf="formulaire.get('message').errors?.maxlength">The maximum
+                                length must be less than 360</span>
+                        </div>
+                    </div>
+                    <div class="group mt-5">
+                        <button class="button"><a [href]="mailto">Send Message</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
