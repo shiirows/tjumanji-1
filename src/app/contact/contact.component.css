@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0;
   color: #6a6f8c;
-  background-image: url("../../assets/boardwalk-569314-min.jpg");
+  background-image: url("../../assets/contact/Mars-min.jpg");
   background-size: cover;
   font: 600 16px/18px "Open Sans", sans-serif;
 }
@@ -74,7 +74,8 @@ a {
   height: 100%;
   position: absolute;
   padding: 90px 70px 50px 70px;
-  background: rgba(40, 57, 101, 0.9);
+  background: rgb(15 15 15 / 80%);
+  background-image: url("../../assets/contact/ciel-etoile.jpg");
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm {
