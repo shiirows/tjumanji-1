@@ -9,12 +9,21 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TerreComponent } from './terre/terre.component';
+import { MarsComponent } from './mars/mars.component';
+import { JupiterComponent } from './jupiter/jupiter.component';
+import { VenusComponent } from './venus/venus.component';
+import { MercureComponent } from './mercure/mercure.component';
 
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
-  { path: 'navbar', component: NavbarComponent},
+  { path: 'terre', component: TerreComponent},
+  { path: 'mars', component: MarsComponent},
+  { path: 'jupiter', component: JupiterComponent},
+  { path: 'venus', component: VenusComponent},
+  { path: 'mercure', component: MercureComponent},
   { path: '**', component: Page404Component }
 ];
 
@@ -26,7 +35,12 @@ const ROUTES: Routes = [
     HomeComponent,
     FooterComponent,
     Page404Component,
-    NavbarComponent
+    NavbarComponent,
+    TerreComponent,
+    MarsComponent,
+    JupiterComponent,
+    VenusComponent,
+    MercureComponent
   ],
   imports: [
     BrowserModule,
