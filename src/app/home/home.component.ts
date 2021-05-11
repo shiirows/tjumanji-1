@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Planete } from '../common/models/modele-planete';
 import { News } from '../common/models/news.model';
-
+import { defaultPlanetes } from '../common/mok/mok-planetes'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +10,10 @@ import { News } from '../common/models/news.model';
 export class HomeComponent implements OnInit {
 
   // les news
-  public news: News[] = []
+  public news: News[] = [];
+
+  //Carousel
+  public planetes:Planete[]= [];
 
   constructor() { }
 

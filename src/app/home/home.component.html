@@ -1,8 +1,39 @@
 <div>
     <!-- HEADER -->
-    <img  style="width: 100%;height: 300px;" src="../../assets/home/header.jpg" class="img-fluid" alt="header home">
+    <!--<img style="width: 100%;height: 500%;" src="../../assets/home/header.jpg" class="img-fluid" alt="header home">-->
+
+    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+        <!-- CAROUSEL -->
+        <div class="carousel-inner">
+            <div *ngFor="let planete of planetes; let first = first;" class="carousel-item active"
+                [ngClass]="{active: first}">
+
+                <img [src]="planete.img" class="d-block w-100" style="height: 90vh" alt="asie" />
+                <div class="text-start carousel-caption d-none d-md-block">
+                    <h5>{{planete.name}}</h5>
+                    <p>Gravity: {{planete.gravity}}</p>
+                    <p>Density: {{planete.density}}</p>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <!-- NEWS -->
+    <h2 class="text-center mt-5">News</h2>
+    <hr>
+    <br>
     <div class="news d-flex justify-content-evenly">
+<<<<<<< HEAD
             <div class="card" style="width: 18rem;" *ngFor="let singleNews of news">
                 <img [src]="singleNews.image" class="card-img-top" [alt]="singleNews.title">
                 <div class="card-body">
@@ -12,6 +43,17 @@
                   </p>
                   <a href="#" class="btn btn-primary">martsh</a>
                 </div>
+=======
+        <div class="card" style="width: 18rem;" *ngFor="let singleNews of news">
+            <img [src]="singleNews.image" class="card-img-top" [alt]="singleNews.title">
+            <div class="card-body">
+                <h5 class="card-title">{{singleNews.title}}</h5>
+                <p class="card-text">
+                    {{singleNews.desc}}
+                </p>
+                <a href="#" class="btn btn-primary">Change</a>
+>>>>>>> dev
             </div>
+        </div>
     </div>
 </div>
