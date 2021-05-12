@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EspaceMajeurComponent implements OnInit {
 
+public message = "no no no"
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  alert(){
+    alert(this.message);
   }
 
 }
