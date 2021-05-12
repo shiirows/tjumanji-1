@@ -21,7 +21,6 @@ import { MercureComponent } from './mercure/mercure.component';
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
-  {path: 'liste', component: ListComponent},
   { path: 'navbar', component: NavbarComponent},
   {path: 'message', component: MessagesComponent},
   { path: 'terre', component: TerreComponent},
