@@ -1,22 +1,43 @@
 
 <div id="navbar">
     <header id="link">
+       
+      
+         <marquee frameborder="10" behavior="scroll" direction="left" scrollamount="9 " >
+       <img   class="sat" src="/assets/img/satellite.png" alt="planet" width="100px" height="65px">
+      </marquee>
+       
+       
+       
         <div id="titre">
+        
            <h1>Mars d’étres seul</h1>
+          
+           <div id="contact">
+            <a [routerLink]="['contact']"> <p>contactez nous</p> </a>
+         
+           </div>
         </div>
+
 
       <div id="system">
  <div id="planet" >
-        <img  class="planets" id="planet1" src="/assets/img/planet.png" alt="planet" width="150px" height="150px">
-        <img class="planets" src="/assets/img/mars.png" alt="planet" width="100px" height="100px">
-        <img class="planets" src="/assets/img/terre.png" alt="planet" width="100px" height="100px">
+    <a [routerLink]="['jupiter']">  <img  class="planets" id="planet1" src="/assets/img/planet.png" alt="planet" width="150px" height="150px"> </a>
+    <a [routerLink]="['mars']"><img class="planets" src="/assets/img/mars.png" alt="planet" width="100px" height="100px"> </a>
+    <a [routerLink]="['terre']"><img class="planets" src="/assets/img/terre.png" alt="planet" width="100px" height="100px"></a>
+    <a [routerLink]="['venus']"> <img class="planets" src="/assets/img/planet2.png" alt="planet" width="100px" height="100px"></a>
+    <a [routerLink]="['mercure']"> <img class="planets" src="/assets/img/planet3.png" alt="planet" width="100px" height="100px">></a>
+        
+        
        
-        <img class="planets" src="/assets/img/planet2.png" alt="planet" width="100px" height="100px">
-        <img class="planets" src="/assets/img/planet3.png" alt="planet" width="100px" height="100px">
+        
+       
       
  </div>
         <div id="soleil">
-          <img src="/assets/img/soleil.png" alt="" width="500px" height="500px">
+<a [routerLink]="['']"> <img id="soleils" src="/assets/img/soleil.png" alt="" width="500px" height="500px"></a>
+         
+         
         </div>
 
       </div>

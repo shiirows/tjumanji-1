@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Robot } from '../common/models/robot.model';
 import { robots } from '../common/mok/mok-robots';
 
@@ -9,10 +10,16 @@ import { robots } from '../common/mok/mok-robots';
 })
 export class ListComponent implements OnInit {
 
+  title: string = 'Messagerie:'
+
   // tabvleau des robots
   robots: Robot[] = []
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToMessages(): void{
+    this.router.navigateByUrl('/message')
+  }
 
   ngOnInit(): void {
     this.robots = robots

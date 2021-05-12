@@ -11,6 +11,11 @@ import { Page404Component } from './page404/page404.component';
 import { ListComponent } from './list/list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MessagesComponent } from './messages/messages.component';
+import { TerreComponent } from './terre/terre.component';
+import { MarsComponent } from './mars/mars.component';
+import { JupiterComponent } from './jupiter/jupiter.component';
+import { VenusComponent } from './venus/venus.component';
+import { MercureComponent } from './mercure/mercure.component';
 
 
 const ROUTES: Routes = [
@@ -19,6 +24,11 @@ const ROUTES: Routes = [
   {path: 'liste', component: ListComponent},
   { path: 'navbar', component: NavbarComponent},
   {path: 'message', component: MessagesComponent},
+  { path: 'terre', component: TerreComponent},
+  { path: 'mars', component: MarsComponent},
+  { path: 'jupiter', component: JupiterComponent},
+  { path: 'venus', component: VenusComponent},
+  { path: 'mercure', component: MercureComponent},
   { path: '**', component: Page404Component }
 ];
 
@@ -31,7 +41,13 @@ const ROUTES: Routes = [
     Page404Component,
     ListComponent,
     NavbarComponent,
-    MessagesComponent
+    MessagesComponent,
+    NavbarComponent,
+    TerreComponent,
+    MarsComponent,
+    JupiterComponent,
+    VenusComponent,
+    MercureComponent
   ],
   imports: [
     BrowserModule,
