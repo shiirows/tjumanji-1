@@ -17,11 +17,13 @@ import { JupiterComponent } from './jupiter/jupiter.component';
 import { VenusComponent } from './venus/venus.component';
 import { MercureComponent } from './mercure/mercure.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileRobotComponent } from './profile-robot/profile-robot.component';
 
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
+  { path: 'profileRobot', component: ProfileRobotComponent},
   { path: 'profil', component: ProfileComponent},
   { path: 'navbar', component: NavbarComponent},
   {path: 'message', component: MessagesComponent},
@@ -49,7 +51,8 @@ const ROUTES: Routes = [
     JupiterComponent,
     VenusComponent,
     MercureComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProfileRobotComponent
   ],
   imports: [
     BrowserModule,

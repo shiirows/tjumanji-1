@@ -31,7 +31,10 @@ export class MarsComponent implements OnInit {
   goToMessages(): void{
     this.showChat = true
   }
-  
+  setCurrentRobot(robot:Robot): void {
+    this.service.currentRobot = robot
+    this.router.navigateByUrl("/profileRobot")
+    }
     // send message
     sendMessage(message: string): void{
       this.messages.me.push(message)
