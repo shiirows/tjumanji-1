@@ -4,6 +4,6 @@ img {
 .im {
   transform: translateX(-400px);
 }
-#carouselHome {
+.backgroundHome {
   background-image: url("../../assets/contact/ciel-etoile.jpg");
 }

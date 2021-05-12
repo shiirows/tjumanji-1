@@ -1,4 +1,4 @@
-<div>
+<div style="color: white;" class="backgroundHome">
     <!-- HEADER -->
     <!--<img style="width: 100%;height: 500%;" src="../../assets/home/header.jpg" class="img-fluid" alt="header home">-->
 
@@ -32,9 +32,9 @@
     <h2 class="text-center mt-5">News</h2>
     <hr>
     <br>
-    <div class="news d-flex justify-content-evenly">
-        <div class="card" style="width: 18rem;" *ngFor="let singleNews of news">
-            <img [src]="singleNews.image" class="card-img-top" [alt]="singleNews.title">
+    <div class="news d-flex justify-content-evenly pb-5">
+        <div class="card text-white bg-dark" style="width: 18rem;" *ngFor="let singleNews of news">
+            <img [src]="singleNews.image" style="height: 15rem;" class="card-img-top" [alt]="singleNews.title">
             <div class="card-body">
                 <h5 class="card-title">{{singleNews.title}}</h5>
                 <p class="card-text">
