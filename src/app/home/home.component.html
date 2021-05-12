@@ -2,13 +2,13 @@
     <!-- HEADER -->
     <!--<img style="width: 100%;height: 500%;" src="../../assets/home/header.jpg" class="img-fluid" alt="header home">-->
 
-    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselHome" class="carousel slide " data-bs-ride="carousel">
         <!-- CAROUSEL -->
-        <div class="carousel-inner">
-            <div *ngFor="let planete of planetes; let first = first;" class="carousel-item active"
+        <div class="carousel-inner d-flex justify-content-center">
+            <div *ngFor="let planete of planetes; let first = first;" class=" carousel-item active  "
                 [ngClass]="{active: first}">
 
-                <img [src]="planete.img" class="d-block w-100" style="height: 90vh" alt="asie" />
+                <img [src]="planete.img" class="im mt-5 mb-5" style=" height: 50vh" [alt]="planete.name" />
                 <div class="text-start carousel-caption d-none d-md-block">
                     <h5>{{planete.name}}</h5>
                     <p>Gravity: {{planete.gravity}}</p>
