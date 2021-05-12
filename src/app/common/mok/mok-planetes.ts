@@ -3,11 +3,12 @@ import { Planete } from "../models/modele-planete";
 export const defaultPlanetes: Planete[]=[
     new Planete(
         'Mars',
-        '../../assets/planetes/MarsPlanete.jpg',
+        '../../assets/planetes/Mars.jpg',
         
         3.93410,
         3.71000,
-       "Terre,Jupiter"
+       "Terre 62 millions de kilomètres, ,Jupiter : 550 millions de km",
+       "0 km",
       ),
       new Planete(
         'Terre',
@@ -15,15 +16,17 @@ export const defaultPlanetes: Planete[]=[
         
         5.51360,
         9.80000,
-       "Venus, Mars"
+       "Venus, Mars",
+       " 78 millions de km" ,
       ),
       new Planete(
         'Venus',
-        '../../assets/planetes/Venus.png',
+        '../../assets/planetes/Venus.jpg',
         
         5.24300,
         8.87000,
-       "Mercure,Terre"
+       "Mercure,Terre",
+       "120 millions de km",
       ),
       new Planete(
         'Mercure',
@@ -31,7 +34,8 @@ export const defaultPlanetes: Planete[]=[
         
         5.42910,
         3.70000,
-       "Venus"
+       "Venus",
+       " 170 millions de km",
       ),
       new Planete(
         'Jupiter',
@@ -39,15 +43,17 @@ export const defaultPlanetes: Planete[]=[
         
         2,
         2,
-       "Saturne, Mars"
+       "Saturne, Mars",
+       "550 millions de km",
       ),
       new Planete(
         'Saturne',
-        '../../assets/planetes/Saturne.jpg',
+        '../../assets/planetes/Saturn.jpg',
         
         0.68710,
         10.44000,
-       "Jupiter, Uranus"
+       "Jupiter, Uranus",
+       "1,199 milliards de km",
       ),
       new Planete(
         'Uranus',
@@ -55,7 +61,8 @@ export const defaultPlanetes: Planete[]=[
         
         2,
         2,
-       "Neptune, Saturne"
+       "Neptune, Saturne",
+       " 2,641 milliards   de km",
       ),
       new Planete(
         'Neptune',
@@ -63,7 +70,8 @@ export const defaultPlanetes: Planete[]=[
         
         2,
         2,
-       "Uranus"
+       "Uranus",
+       "4,269 milliards de km",
       ),
 
 ]
