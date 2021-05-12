@@ -16,11 +16,13 @@ import { MarsComponent } from './mars/mars.component';
 import { JupiterComponent } from './jupiter/jupiter.component';
 import { VenusComponent } from './venus/venus.component';
 import { MercureComponent } from './mercure/mercure.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent},
+  { path: 'profil', component: ProfileComponent},
   { path: 'navbar', component: NavbarComponent},
   {path: 'message', component: MessagesComponent},
   { path: 'terre', component: TerreComponent},
@@ -46,7 +48,8 @@ const ROUTES: Routes = [
     MarsComponent,
     JupiterComponent,
     VenusComponent,
-    MercureComponent
+    MercureComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
